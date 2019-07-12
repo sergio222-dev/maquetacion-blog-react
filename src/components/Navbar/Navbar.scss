@@ -1,0 +1,31 @@
+@import "../../styles/constants.scss";
+
+.z-nav {
+    display: none;
+
+    @media #{$desktops-wide} {
+        padding-left: 40px;
+        min-width: 600px;
+        display: flex;
+        align-items: center;
+    }
+
+    @media #{$desktops} {
+        padding-left: 40px;
+        min-width: 600px;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.z-nav div {
+
+    @media #{$desktops-wide} {
+        text-decoration: none;
+        color: white;
+        font-size: 1.25em;
+        width: 160px;
+        text-align: center;
+    }
+}

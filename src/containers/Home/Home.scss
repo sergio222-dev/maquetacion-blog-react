@@ -1,0 +1,18 @@
+@import "../../styles/constants.scss";
+
+.page-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: $primary;
+
+    @media #{$desktops-wide} {
+        background-image: url("./bg.png");
+        background-size: cover;
+    }
+
+    @media #{$desktops} {
+        background-image: url("./bg.png");
+        background-size: cover;
+    }
+
+}
