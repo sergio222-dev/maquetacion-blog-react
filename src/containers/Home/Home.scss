@@ -2,12 +2,15 @@
 
 .page-1 {
     width: 100%;
-    height: 100vh;
     background-color: $primary;
 
     @media #{$desktops-wide} {
         background-image: url("./bg.png");
-        background-size: cover;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
     }
 
     @media #{$desktops} {
@@ -15,4 +18,18 @@
         background-size: cover;
     }
 
+    .z-title {
+        font-size: 5.5em;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.z-central-button {
+    margin: 50px auto;
+}
+
+.z-scroll-down-button {
+    position: absolute;
+    bottom: 20px;
 }
