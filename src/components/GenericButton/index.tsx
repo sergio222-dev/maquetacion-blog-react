@@ -1,52 +1,16 @@
-import React, {CSSProperties, ReactChild} from 'react';
-import './GenericButton.scss';
+import React, {ReactChild} from 'react';
+import {usestyle} from "./styles";
 
 type props = {
-    size?: number,
-    color?: 'white' | 'green',
-    children?: ReactChild | ReactChild[],
     className?: string;
-    width?: string;
-    height?: string
-};
+    children?: ReactChild | ReactChild[];
+}
 
-export function GenericButton({color, size, children, width, height, className}: props) {
-
-    const styles: CSSProperties[] = [
-        {
-            color: 'white',
-            backgroundColor: "rgb(85,209,85)",
-        },
-        {
-            color: 'black',
-            backgroundColor: "rgba(255,255,255,0.5)",
-        }
-    ];
-
-    let currentColor;
-
-    if (color) {
-        switch (color) {
-            case "green":
-                currentColor = styles[0];
-                break;
-            case "white":
-                currentColor = styles[1];
-                break;
-        }
-    } else {
-        currentColor = styles[0];
-    }
-
-    const style: CSSProperties = {
-        ...currentColor,
-        height: size ? size + 'px' : height ? height : 'auto',
-        fontSize: size ? (size / 2) + 'px' : '20px',
-        width: size ? (size / 2) * 10 + 'px' : width ? width : 'auto'
-    };
+export function GenericButton({className, children}: props) {
+    const classes = usestyle();
 
     return (
-        <div className={className ? 'z-button ' + className : 'z-button'} style={style}>
+        <div className={className ? className+' '+classes.root : classes.root }>
             {children}
         </div>
     )

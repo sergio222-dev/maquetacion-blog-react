@@ -2,25 +2,24 @@ import React from "react";
 import "./Home.scss";
 import {GenericButton} from "../../components/GenericButton";
 import {ArrowDownward} from '@material-ui/icons';
+import {usestyle} from "./styles";
 
 export function Home() {
+    const classes = usestyle();
+
     return (
-        <div className={'page-1'}>
-            <div className={"z-title"}>
-                Art is Eternal Happiness
-                <GenericButton
-                    size={60}
-                    className={'z-central-button'}
-                >
+        <div className={classes.root}>
+            <div>
+                <div className={classes.title}>
+                    Art is Eternal Happiness
+                </div>
+                <GenericButton className={classes.button}>
                     WORK WITH US
                 </GenericButton>
             </div>
-            <GenericButton
-                className={'z-scroll-down-button'}
-                color={"white"}
-            >
+            <GenericButton className={classes.scrollDown}>
                 scroll down
-                <ArrowDownward/>
+                <ArrowDownward className={classes.arrow}/>
             </GenericButton>
         </div>
     );

@@ -4,3 +4,5 @@ $desktops-wide: "only screen and (min-width: 992px)";
 
 //Color
 $primary: rgb(85,209,85);
+$primary-darker: darken($primary, 50%);
+$primary-gray: grayscale($primary);
