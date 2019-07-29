@@ -1,16 +1,21 @@
 import React, {ReactChild} from 'react';
 import {usestyle} from "./styles";
+import {usecustomstyle} from "../hooks";
+import {StyledComponent} from "../../types/components";
 
-type props = {
-    className?: string;
+interface Props extends StyledComponent<styles> {
     children?: ReactChild | ReactChild[];
 }
 
-export function GenericButton({className, children}: props) {
-    const classes = usestyle();
+type styles = {
+    root?: string;
+}
+
+export function GenericButton({classes, children}: Props) {
+    const styles = usecustomstyle(classes, usestyle());
 
     return (
-        <div className={className ? className+' '+classes.root : classes.root }>
+        <div className={styles.root}>
             {children}
         </div>
     )

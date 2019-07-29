@@ -1,0 +1,22 @@
+@import "./variables.module";
+
+html body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  //color: $primaryDarken;
+  font-size: $fontSize;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../Assets/ProximaNovaBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../Assets/ProximaNova.ttf") format('truetype');
+}
+

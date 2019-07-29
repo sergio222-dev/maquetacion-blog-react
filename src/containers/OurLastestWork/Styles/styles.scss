@@ -1,0 +1,11 @@
+@import "../../../styles/variables.module";
+
+.z-section-3 {
+  background-color: $primary;
+  color: $primaryDarken;
+  padding: 50px 0;
+
+  .z-title {
+    font-weight: bolder;
+  }
+}

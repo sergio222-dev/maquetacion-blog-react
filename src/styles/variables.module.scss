@@ -1,0 +1,17 @@
+$primary: rgb(85,209,85);
+$primaryDarken: darken($primary, 10%);
+//noinspection SpellCheckingInspection
+$primaryGray: grayscale($primary);
+$primaryLighten: lighten($primary, 10%);
+$fontSize: 16px;
+
+//noinspection CssInvalidPseudoSelector,CssUnknownProperty
+:export {
+  // colors
+  primary: $primary;
+  primaryGray: $primaryGray;
+  primaryDarken: $primaryDarken;
+  primaryLighten: $primaryLighten;
+
+  fontSize: $fontSize;
+}

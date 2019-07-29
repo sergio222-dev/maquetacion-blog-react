@@ -1,0 +1,21 @@
+.z-section-1 {
+  background-image: url("../Assets/bg.png");
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 800px;
+  text-align: center;
+  position: relative;
+
+
+  .z-title {
+    font-family: 'Montserrat ', sans-serif;
+    font-style: normal;
+    font-size: 3.438em;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+  }
+}

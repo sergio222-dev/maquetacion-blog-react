@@ -1,19 +1,19 @@
 import React from "react";
-import {Home} from "../../containers/Home";
-import {Header} from "../../components/Header";
-import {WhatWeDo} from "../../containers/WhatWeDo";
+import './main.scss';
+import {OurLastestWork as Section3} from "../../containers/OurLastestWork";
+import {WhatWeDo as Section2} from "../../containers/WhatWeDo";
+import {Home as Section1} from '../../containers/Home';
 
-import {MuiThemeProvider} from "@material-ui/core/styles";
-import {zTheme} from "./theme";
 
 export function Main() {
+
     return (
         <>
-            <MuiThemeProvider theme={zTheme}>
-                <Header/>
-                <Home/>
-                <WhatWeDo/>
-            </MuiThemeProvider>
+            {/*TODO: Header is not a reusable component, make it static or reusable*/}
+            {/*<Header/>*/}
+            <Section1 />
+            <Section2 />
+            <Section3 />
         </>
     );
 }

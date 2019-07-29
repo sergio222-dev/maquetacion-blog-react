@@ -1,26 +1,27 @@
-import React from "react";
-import "./Home.scss";
-import {GenericButton} from "../../components/GenericButton";
-import {ArrowDownward} from '@material-ui/icons';
-import {usestyle} from "./styles";
+import React from 'react';
+import {ArrowDownward} from "@material-ui/icons";
+import {GenericButton, ScrollButton} from "./Styles";
+import './Styles/styles.scss'
 
-export function Home() {
-    const classes = usestyle();
+export class Home extends React.Component {
 
-    return (
-        <div className={classes.root}>
-            <div>
-                <div className={classes.title}>
-                    Art is Eternal Happiness
+    render() {
+
+        return (
+            <div className={'z-section-1'}>
+                <div>
+                    <div className={"z-title"}>
+                        Art is Eternal Happiness
+                    </div>
+                    <GenericButton>
+                        WORK WITH US
+                    </GenericButton>
                 </div>
-                <GenericButton className={classes.button}>
-                    WORK WITH US
-                </GenericButton>
+                <ScrollButton>
+                    scroll down
+                    <ArrowDownward/>
+                </ScrollButton>
             </div>
-            <GenericButton className={classes.scrollDown}>
-                scroll down
-                <ArrowDownward className={classes.arrow}/>
-            </GenericButton>
-        </div>
-    );
+        );
+    }
 }

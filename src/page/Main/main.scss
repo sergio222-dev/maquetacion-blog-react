@@ -1,0 +1,23 @@
+.z-header {
+  z-index: 1;
+  width: 100%;
+  min-width: 600px;
+  height: 60px;
+  position: fixed;
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+6,e5e5e5+99&1+11,0+100 */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 6%, rgba(12,12,12,1) 11%, rgba(229,229,229,0.01) 99%, rgba(229,229,229,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 6%,rgba(12,12,12,1) 11%,rgba(229,229,229,0.01) 99%,rgba(229,229,229,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,1) 6%,rgba(12,12,12,1) 11%,rgba(229,229,229,0.01) 99%,rgba(229,229,229,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00e5e5e5',GradientType=0 ); /* IE6-9 */
+
+  display: flex;
+
+  .z-nav {
+    position: relative;
+    width: 640px;
+    display: flex;
+    align-items: center;
+  }
+
+}
