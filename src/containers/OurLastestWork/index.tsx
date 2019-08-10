@@ -1,7 +1,8 @@
 import React from 'react';
 import {Typography, Grid} from "@material-ui/core";
 import {ArrowRightAlt} from "@material-ui/icons";
-import {PageTitle, ViewMoreButton, ZToggleButtonGroup, TypographySubTitle, TypographyTitle} from "./Styles/";
+import {ViewMoreButton, ZToggleButtonGroup} from "./Styles/";
+import {PageTitleGreen} from "../../styles/components/PageTitle";
 import './Styles/styles.scss';
 import imagen from './assets/one.png';
 
@@ -27,16 +28,14 @@ export class OurLastestWork extends React.Component {
 
         return (
             <div className={'z-section-3'}>
-                <PageTitle>
-                    <div slot={'Header'}>
-                        <TypographyTitle>OUR LATEST WORK</TypographyTitle>
+                <PageTitleGreen>
+                    <div slot={'header'}>
+                        OUR LATEST WORK
                     </div>
-                    <div slot={'Content'}>
-                        <TypographySubTitle>
+                    <div slot={'content'}>
                             Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
-                        </TypographySubTitle>
                     </div>
-                </PageTitle>
+                </PageTitleGreen>
                 <div style={{textAlign:'center'}}>
                     <ZToggleButtonGroup
                         options={options}

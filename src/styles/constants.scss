@@ -1,8 +1,0 @@
-$tablets: "only screen and (max-width: 767px)";
-$desktops: "only screen and (min-width: 768px) and (max-width: 991px)";
-$desktops-wide: "only screen and (min-width: 992px)";
-
-//Color
-$primary: rgb(85,209,85);
-$primary-darker: darken($primary, 50%);
-$primary-gray: grayscale($primary);

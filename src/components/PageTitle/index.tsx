@@ -1,26 +1,40 @@
 import React from 'react';
-import {Slot} from 'react-slot';
-import {usestyle} from "./styles";
+import {PageTitleBase} from "../PageTitleBase";
 import {usecustomstyle} from "../hooks";
+import {Typography} from "@material-ui/core";
+import {Slot} from "react-slot";
+import {StyledComponent} from "../../types/components";
 
-type props = {
-    classes?: style;
-    children: React.ReactNode;
+interface Props extends StyledComponent<Styles> {
+
 }
 
-type style = {
+interface Styles {
     root?: string;
     hr?: string;
+    title?: string;
+    subTitle?: string;
 }
 
-export function PageTitle({children, classes}: props) {
-    const styles = usecustomstyle(classes, usestyle());
+export const PageTitle: React.FunctionComponent<Props> = ({classes, children}) => {
+
+    const styles: Styles = usecustomstyle(classes, {});
 
     return (
-        <div className={styles.root}>
-            <Slot name={"Header"} content={children}/>
-            <hr className={styles.hr} />
-            <Slot name={"Content"} content={children}/>
-        </div>
+        <>
+            <PageTitleBase classes={styles}>
+                <div slot={'Header'}>
+                    <Typography classes={{root: styles.title}}>
+                        <Slot content={children} as={React.Fragment} name={'header'}/>
+                    </Typography>
+                </div>
+                <div slot={'Content'}>
+                    <Typography classes={{root: styles.subTitle}}>
+                        <Slot content={children} as={React.Fragment} name={'content'}/>
+                    </Typography>
+                </div>
+            </PageTitleBase>
+        </>
     );
-}
+};
+

@@ -1,5 +1,5 @@
 import {Theme, withStyles, Typography} from "@material-ui/core";
-import {PageTitle as BasePageTitle} from "../../../components/PageTitle";
+import {PageTitleBase as BasePageTitle} from "../../../components/PageTitleBase";
 import {GenericButton as Button} from "../../../components/GenericButton";
 import {ZToggleButtonGroup as BaseToggler} from "../../../components/ZToggleButtonGroup";
 import React from 'react';

@@ -6,7 +6,7 @@ declare module 'react-slot' {
 
     interface SlotProps {
         name?: string;
-        as?: string;
+        as?: string | Function;
         content: React.ReactNode;
         id?: string;
         className?: string;
@@ -24,3 +24,7 @@ declare module 'object-assign-deep' {
     function ObjectAssignDeep(...objects);
     export = ObjectAssignDeep;
 }
+
+/**
+ * CSS compatibility
+ */

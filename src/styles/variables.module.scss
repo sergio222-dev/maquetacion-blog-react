@@ -1,17 +1,23 @@
-$primary: rgb(85,209,85);
-$primaryDarken: darken($primary, 10%);
-//noinspection SpellCheckingInspection
-$primaryGray: grayscale($primary);
-$primaryLighten: lighten($primary, 10%);
+$primary: #54d154;
+$primaryDarken: #207b20;
+$primaryLighten: #2b9b2b;
+
+$secondary: white;
+$secondaryDarken: #828181;
+$secondaryLighten: #b7b3b3;
+
 $fontSize: 16px;
 
 //noinspection CssInvalidPseudoSelector,CssUnknownProperty
 :export {
   // colors
   primary: $primary;
-  primaryGray: $primaryGray;
   primaryDarken: $primaryDarken;
   primaryLighten: $primaryLighten;
+
+  secondary: $secondary;
+  secondaryDarken: $secondaryDarken;
+  secondaryLighten: $secondaryLighten;
 
   fontSize: $fontSize;
 }

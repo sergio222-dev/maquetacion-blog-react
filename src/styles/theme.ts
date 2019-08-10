@@ -9,7 +9,11 @@ declare module '@material-ui/core/styles/createMuiTheme' {
             primary?: string;
             primaryDarken?: string;
             primaryLighten?: string;
-            primaryGray?: string;
+
+            secondary?: string;
+            secondaryDarken?: string;
+            secondaryLighten?: string;
+
         },
         font: {
             fontSize?: string;
@@ -22,7 +26,10 @@ declare module '@material-ui/core/styles/createMuiTheme' {
             primary?: string;
             primaryDarken?: string;
             primaryLighten?: string;
-            primaryGray?: string;
+
+            secondary?: string;
+            secondaryDarken?: string;
+            secondaryLighten?: string;
         },
         font: {
             fontSize?: string;
@@ -35,7 +42,9 @@ const {
     primary,
     primaryDarken,
     primaryLighten,
-    primaryGray,
+    secondary,
+    secondaryDarken,
+    secondaryLighten,
     fontSize,
 } = styles;
 
@@ -44,8 +53,10 @@ export const Theme: AugmentedTheme = createMuiTheme({
     colors: {
         primary,
         primaryDarken,
-        primaryGray,
         primaryLighten,
+        secondary,
+        secondaryDarken,
+        secondaryLighten,
     },
     font: {
         fontSize,

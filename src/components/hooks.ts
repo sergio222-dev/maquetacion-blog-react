@@ -1,5 +1,9 @@
 import clsx from 'clsx';
 
+export const useCapitalize = (s: string) => {
+    return s.charAt(0).toUpperCase() + s.slice(1)
+};
+
 export function usecustomstyle(customStyle: any, componentStyle: any) {
 
     if (!customStyle) {
