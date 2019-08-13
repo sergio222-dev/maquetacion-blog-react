@@ -1,4 +1,13 @@
 .z-section-7 {
   background-color: #333333;
   padding-top: 50px;
+
+  .z-form {
+    :first-child {
+      border-radius: 5px 5px 0 0;
+    }
+    :last-child {
+      border-radius: 0 0 5px 5px;
+    }
+  }
 }

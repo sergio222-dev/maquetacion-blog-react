@@ -1,6 +1,22 @@
 import {PageTitle} from "../../../components/PageTitle";
+import {Button} from "@material-ui/core";
 import {withStyles, Theme} from "@material-ui/core";
 
+export const SendMessageButton = withStyles(
+(theme: Theme) => {
+    return {
+        root: {
+            color: 'white',
+            fontFamily: 'Proxima Nova Regular, sens-serif',
+            backgroundColor: theme.colors.primaryDarken,
+            width: '100%',
+            fontSize: '14px',
+            margin: '0',
+            lineHeight: '1',
+        }
+    }
+}
+)(Button);
 
 export const PageTitleFooter = withStyles({
     root: {

@@ -27,25 +27,27 @@ export class Testimonials extends React.Component {
                         Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
                     </div>
                 </PageTitleGray>
-                <TestimonialsGroup>
-                    {[0, 1, 2, 3, 4].map(i =>
-                        <Testimonial key={i}>
-                            <div
-                                slot={'testimonial'}
-                            >
-                                {testimonials.content}
-                            </div>
-                            <div slot={'avatar'}>
-                                <img alt={'avatar'} src={avatar}/>
-                            </div>
-                            <div slot={'author'}>
-                                {testimonials.author}
-                            </div>
-                            <div slot={'company'}>
-                                {testimonials.company}
-                            </div>
-                        </Testimonial>)}
-                </TestimonialsGroup>
+                <div className="container">
+                    <TestimonialsGroup>
+                        {[0, 1, 2, 3, 4].map(i =>
+                            <Testimonial key={i}>
+                                <div
+                                    slot={'testimonial'}
+                                >
+                                    {testimonials.content}
+                                </div>
+                                <div slot={'avatar'}>
+                                    <img alt={'avatar'} src={avatar}/>
+                                </div>
+                                <div slot={'author'}>
+                                    {testimonials.author}
+                                </div>
+                                <div slot={'company'}>
+                                    {testimonials.company}
+                                </div>
+                            </Testimonial>)}
+                    </TestimonialsGroup>
+                </div>
             </div>
         );
     }
