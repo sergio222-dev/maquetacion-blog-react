@@ -14,6 +14,8 @@ declare module '@material-ui/core/styles/createMuiTheme' {
             secondaryDarken?: string;
             secondaryLighten?: string;
 
+            titleColor?: string;
+
         },
         font: {
             fontSize?: string;
@@ -30,6 +32,8 @@ declare module '@material-ui/core/styles/createMuiTheme' {
             secondary?: string;
             secondaryDarken?: string;
             secondaryLighten?: string;
+
+            titleColor?: string;
         },
         font: {
             fontSize?: string;
@@ -46,6 +50,7 @@ const {
     secondaryDarken,
     secondaryLighten,
     fontSize,
+    titleColor,
 } = styles;
 
 // Main theme
@@ -57,6 +62,7 @@ export const Theme: AugmentedTheme = createMuiTheme({
         secondary,
         secondaryDarken,
         secondaryLighten,
+        titleColor
     },
     font: {
         fontSize,

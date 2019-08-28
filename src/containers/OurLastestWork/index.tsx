@@ -43,9 +43,16 @@ export class OurLastestWork extends React.Component {
                     />
                 </div>
                 <Grid container justify={'center'} spacing={5} style={{width: '100%', margin: '0'}}>
-                    {[0,1,2,3,4,5,6,7,8,9].map(v => (
+                    {[0,1,2,3,4].map(v => (
                         <Grid item key={v} style={{textAlign: 'center'}}>
-                            <img width={'300px'} height={'300px'} src={imagen} alt={'nose'}/>
+                            <img width={'150px'} height={'150px'} src={imagen} alt={'nose'}/>
+                        </Grid>
+                    ))}
+                </Grid>
+                <Grid container justify={'center'} spacing={5} style={{width: '100%', margin: '0'}}>
+                    {[0,1,2,3,4].map(v => (
+                        <Grid item key={v} style={{textAlign: 'center'}}>
+                            <img width={'150px'} height={'150px'} src={imagen} alt={'nose'}/>
                         </Grid>
                     ))}
                 </Grid>

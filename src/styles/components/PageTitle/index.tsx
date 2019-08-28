@@ -14,14 +14,14 @@ export const PageTitleGreen = withStyles(
                 border: `1px ${theme.colors.primaryDarken} solid`,
             },
             title: {
-                color: theme.colors.primaryDarken,
+                color: theme.colors.titleColor,
                 fontSize: '20px',
                 fontFamily: '"Montserrat ", sans-serif',
                 fontWeight: 400,
                 letterSpacing: '10px',
             },
             subTitle: {
-                color: theme.colors.primaryLighten,
+                color: theme.colors.primaryDarken,
                 fontFamily: 'Open Sans , sans-serif',
                 fontWeight: 100,
             }

@@ -24,13 +24,13 @@ export const PageTitle: React.FunctionComponent<Props> = ({classes, children}) =
         <>
             <PageTitleBase classes={styles}>
                 <div slot={'Header'}>
-                    <Typography classes={{root: styles.title}}>
-                        <Slot content={children} as={React.Fragment} name={'header'}/>
+                    <Typography component={'div'} classes={{root: styles.title}}>
+                        <Slot content={children} as={'div'} name={'header'}/>
                     </Typography>
                 </div>
                 <div slot={'Content'}>
-                    <Typography classes={{root: styles.subTitle}}>
-                        <Slot content={children} as={React.Fragment} name={'content'}/>
+                    <Typography component={'div'} classes={{root: styles.subTitle}}>
+                        <Slot content={children} as={'div'} name={'content'}/>
                     </Typography>
                 </div>
             </PageTitleBase>

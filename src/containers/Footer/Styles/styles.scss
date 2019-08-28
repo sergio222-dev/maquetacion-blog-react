@@ -10,4 +10,16 @@
       border-radius: 0 0 5px 5px;
     }
   }
+
+  .z-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+    text-align: center;
+    color: white;
+    height: 40px;
+
+    font-family: "Proxima Nova Regular", sans-serif;
+  }
 }

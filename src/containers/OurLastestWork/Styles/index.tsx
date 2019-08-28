@@ -1,4 +1,4 @@
-import {Theme, withStyles, Typography} from "@material-ui/core";
+import {Theme, withStyles, Typography, Button as MaterialButton} from "@material-ui/core";
 import {PageTitleBase as BasePageTitle} from "../../../components/PageTitleBase";
 import {GenericButton as Button} from "../../../components/GenericButton";
 import {ZToggleButtonGroup as BaseToggler} from "../../../components/ZToggleButtonGroup";
@@ -104,7 +104,10 @@ export const ViewMoreButton = withStyles(
                 backgroundColor: theme.colors.primaryDarken,
                 fontFamily: 'Proxima Nova Regular, sans-serif',
                 fontSize: '18px',
+                textTransform: 'none',
+                borderRadius: '25px',
+                padding: '5px 18px',
             }
         }
     }
-)(Button);
+)(MaterialButton);

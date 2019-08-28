@@ -2,7 +2,6 @@ import {Theme, withStyles} from "@material-ui/core";
 import {Typography} from "@material-ui/core";
 import {PageTitleBase as BasePageTitle} from "../../../components/PageTitleBase";
 import {Card as BaseCard} from "../../../components/Card";
-import {light} from "@material-ui/core/styles/createPalette";
 
 export const PageTitle = withStyles(
     (theme: Theme) => {
@@ -28,6 +27,12 @@ export const Card = withStyles(
                 fontSize: '24px',
                 color: theme.colors.secondaryDarken,
             },
+            icon: {
+                color: theme.colors.primary,
+            },
+            container: {
+                backgroundColor: theme.colors.primaryLighten,
+            },
             content: {
                 fontFamily: 'Montserrat ,sans-serif',
                 fontSize: '15px',
@@ -38,7 +43,11 @@ export const Card = withStyles(
                 backgroundColor: theme.colors.primary,
                 fontFamily: 'Proxima Nova Bold, sans-serif',
                 fontWeight: 'bold',
-                padding: '6px 18px',
+                padding: '2px 18px',
+                textTransform: 'none',
+                '&:hover': {
+                    backgroundColor: theme.colors.primaryDarken,
+                }
             }
         }
     }

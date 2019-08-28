@@ -86,6 +86,9 @@ export class Footer extends React.Component {
                         </div>
                     </Grid>
                 </Grid>
+                <div className={'z-footer'}>
+                    <p>Made with ♥ by Kristina :) - Make up with React by    <a target={'_blank'} href={'https://github.com/sergio222-dev'}>Sergio</a></p>
+                </div>
             </div>
         );
     }

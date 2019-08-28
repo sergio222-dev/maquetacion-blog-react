@@ -1,10 +1,12 @@
 $primary: #54d154;
-$primaryDarken: #207b20;
-$primaryLighten: #2b9b2b;
+$primaryDarken: #39ab39; //#207b20;
+$primaryLighten: #e0f3e0;// #2b9b2b;
 
 $secondary: white;
 $secondaryDarken: #828181;
 $secondaryLighten: #b7b3b3;
+
+$titleColor: #2b9b2b;
 
 $fontSize: 16px;
 
@@ -18,6 +20,8 @@ $fontSize: 16px;
   secondary: $secondary;
   secondaryDarken: $secondaryDarken;
   secondaryLighten: $secondaryLighten;
+
+  titleColor: $titleColor;
 
   fontSize: $fontSize;
 }

@@ -16,20 +16,20 @@ export class WhatWeDo extends React.Component {
                         Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
                     </div>
                 </PageTitleGray>
-                <Grid container justify={"space-around"}>
-                    <Grid item>
+                <Grid container justify={"center"}>
+                    <Grid xs={2} item>
                         <Card title={"Lorem Ipsum"} buttonName={"Learn More"}>
                             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                             sollicitudin, lorem quis bibendum auctor,
                         </Card>
                     </Grid>
-                    <Grid item>
+                    <Grid xs={2} item>
                         <Card title={"Lorem Ipsum"} buttonName={"Learn More"}>
                             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                             sollicitudin, lorem quis bibendum auctor,
                         </Card>
                     </Grid>
-                    <Grid item>
+                    <Grid xs={2} item>
                         <Card title={"Lorem Ipsum"} buttonName={"Learn More"}>
                             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                             sollicitudin, lorem quis bibendum auctor,

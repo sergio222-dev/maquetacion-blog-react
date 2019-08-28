@@ -2,6 +2,7 @@ import React, {ReactChild} from 'react';
 import {usestyle} from "./styles";
 import {usecustomstyle} from "../hooks";
 import {StyledComponent} from "../../types/components";
+import {Button} from "@material-ui/core";
 
 interface Props extends StyledComponent<styles> {
     children?: ReactChild | ReactChild[];
@@ -12,11 +13,11 @@ type styles = {
 }
 
 export function GenericButton({classes, children}: Props) {
-    const styles = usecustomstyle(classes, usestyle());
+    const styles: styles = usecustomstyle(classes, usestyle());
 
     return (
-        <div className={styles.root}>
+        <Button href={''} classes={styles}>
             {children}
-        </div>
+        </Button>
     )
 }

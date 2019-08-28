@@ -1,19 +1,23 @@
-import {Theme, withStyles} from "@material-ui/core";
+import {Theme, withStyles, Button as MaterialButton} from "@material-ui/core";
 import {GenericButton as BaseButton} from "../../../components/GenericButton";
 
 export const GenericButton = withStyles(
     (theme: Theme) => {
         return {
             root: {
-                paddingTop: '10px',
-                paddingBottom: '10px',
+                padding: '10px 25px',
                 fontSize: '1.5em',
+                color: 'white',
+                borderRadius: '50px',
                 backgroundColor: theme.colors.primary,
                 fontFamily: 'ProximaNovaSoftW03-Regular',
+                '&:hover': {
+                  backgroundColor: theme.colors.primaryDarken,
+                },
             }
         }
     }
-)(BaseButton);
+)(MaterialButton);
 
 export const ScrollButton = withStyles(
     (theme: Theme) => {
@@ -21,14 +25,20 @@ export const ScrollButton = withStyles(
             root: {
                 position: 'absolute',
                 bottom: '20px',
-                fontFamily: 'Proxima Nova ',
+                fontFamily: 'Proxima Nova Light ',
                 fontSize: theme.font.fontSize,
+                borderRadius: '20px',
+                padding: '0 20px',
                 color: 'black',
+                textTransform: 'none',
                 backgroundColor: 'rgba(255,255,255,0.5)',
+                '&:hover': {
+                    backgroundColor: theme.colors.secondaryLighten,
+                },
             }
         }
     }
-)(BaseButton);
+)(MaterialButton);
 
 //
 // export const usestyle = makeStyles(
