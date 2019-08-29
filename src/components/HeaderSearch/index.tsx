@@ -8,7 +8,7 @@ export function HeaderSearch() {
     return (
       <div className={'z-search'}>
           <div>
-              <input type={'text'}/>
+              <input placeholder={'Search...'} type={'text'}/>
               <Search />
           </div>
       </div>
