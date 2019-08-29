@@ -10,6 +10,7 @@ const styles = makeStyles({
         userSelect: 'none',
         justifyContent: 'center',
         alignItems: 'center',
+        textDecoration: 'none',
     },
     selector: {
         content: '""',

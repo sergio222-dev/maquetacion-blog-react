@@ -18,7 +18,7 @@ export class Testimonials extends React.Component {
 
     render() {
         return (
-            <div className={'z-section-4'}>
+            <div id={'Testimonials'} className={'z-section-4'}>
                 <PageTitleGray>
                     <div slot={'header'}>
                         TESTIMONIALS

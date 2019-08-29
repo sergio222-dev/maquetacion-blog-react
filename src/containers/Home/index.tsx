@@ -9,7 +9,7 @@ export class Home extends React.Component {
     render() {
 
         return (
-            <div className={'z-section-1'}>
+            <div id={'Home'} className={'z-section-1'}>
                 <Navbar />
                 <div>
                     <div className={"z-title"}>

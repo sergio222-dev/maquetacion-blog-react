@@ -5,7 +5,7 @@ import {usecustomstyle} from "../hooks";
 import {useSpring, animated, config} from "react-spring";
 
 interface Props extends StyledComponent<Styles> {
-    href?: string;
+    href: string;
 }
 
 interface Styles {
@@ -14,7 +14,6 @@ interface Styles {
 }
 
 export const ZNavItem: FunctionComponent<Props> = ({children, classes, href}) => {
-
     const styles: Styles = usecustomstyle(classes, useStyleBase());
     const [hover, setHover] = useState(0);
 
@@ -29,6 +28,7 @@ export const ZNavItem: FunctionComponent<Props> = ({children, classes, href}) =>
             className={styles.root}
             onMouseOver={() => setHover(1)}
             onMouseOut={() => setHover(0)}
+            onClick={() => window.location.href = href}
         >
             {children}
 

@@ -7,7 +7,7 @@ import './Styles/setyles.scss';
 export class WhatWeDo extends React.Component {
     render() {
         return (
-            <div className={'z-section-2'}>
+            <div id={'What'} className={'z-section-2'}>
                 <PageTitleGray>
                     <div slot={'header'}>
                         WHAT WE DO

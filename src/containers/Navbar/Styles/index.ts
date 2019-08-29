@@ -7,7 +7,7 @@ export const Title = withStyles(
             root: {
                 fontFamily: '"Nautilus", sans-serif',
                 color: 'white',
-                fontSize: '1.75em'
+                fontSize: '3em'
             }
         }
     }

@@ -21,7 +21,7 @@ export class Footer extends React.Component {
 
     render() {
         return (
-            <div className={'z-section-7'}>
+            <div id={'Contact'} className={'z-section-7'}>
                 <Grid style={{width: '100%', margin: '0'}} spacing={8} justify={'center'} component={'div'} container>
                     <Grid style={gridStyle} component={'div'} item xs={4}>
                         <PageTitleFooter>
