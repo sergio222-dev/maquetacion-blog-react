@@ -5,15 +5,16 @@ export const usestyle = makeStyles(
         root: {
             boxShadow: 'none',
             textAlign: 'center',
-            padding: '0 24px',
-            maxWidth: '400px',
+            padding: '0 0',
+            margin: '12px 12px'
+            //maxWidth: '400px',
         },
         container: {
             display: 'inline-block',
-            padding: '40px',
-            margin: '10px',
-            backgroundColor: theme.colors.primaryLighten,
-            borderRadius: '50px',
+             padding: '10px',
+            // margin: '10px',
+            borderRadius: '30px',
+            maxWidth: '120px',
         },
         title: {
             margin: '10px 0',
@@ -25,8 +26,10 @@ export const usestyle = makeStyles(
             margin: '10px 0',
         },
         icon: {
-            height: '160px',
-            width: '160px',
+            height: '100%',
+            width: '100%',
+            minWidth: '92px',
+            minHeight: '92px',
             color: 'green',
         }
     })

@@ -27,3 +27,5 @@ export function usecustomstyle(customStyle: any, componentStyle: any) {
 
     return classes;
 }
+
+

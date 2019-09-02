@@ -22,6 +22,7 @@ export function Main() {
             <Section5 />
             <Section6 />
             <Section7 />
+
         </>
     );
 }

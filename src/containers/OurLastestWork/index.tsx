@@ -42,14 +42,14 @@ export class OurLastestWork extends React.Component {
                         onChange={null}
                     />
                 </div>
-                <Grid container justify={'center'} spacing={5} style={{width: '100%', margin: '0'}}>
+                <Grid container justify={'center'} spacing={5} style={{width: '100%', marginTop: '15px'}}>
                     {[0,1,2,3,4].map(v => (
                         <Grid item key={v} style={{textAlign: 'center'}}>
                             <img width={'150px'} height={'150px'} src={imagen} alt={'nose'}/>
                         </Grid>
                     ))}
                 </Grid>
-                <Grid container justify={'center'} spacing={5} style={{width: '100%', margin: '0'}}>
+                <Grid container justify={'center'} spacing={5} style={{width: '100%', marginTop: '15px', marginBottom: '15px'}}>
                     {[0,1,2,3,4].map(v => (
                         <Grid item key={v} style={{textAlign: 'center'}}>
                             <img width={'150px'} height={'150px'} src={imagen} alt={'nose'}/>

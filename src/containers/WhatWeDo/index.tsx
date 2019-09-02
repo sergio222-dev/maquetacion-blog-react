@@ -17,19 +17,19 @@ export class WhatWeDo extends React.Component {
                     </div>
                 </PageTitleGray>
                 <Grid container justify={"center"}>
-                    <Grid xs={2} item>
+                    <Grid md={2} xs={12} item>
                         <Card title={"Lorem Ipsum"} buttonName={"Learn More"}>
                             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                             sollicitudin, lorem quis bibendum auctor,
                         </Card>
                     </Grid>
-                    <Grid xs={2} item>
+                    <Grid md={2} xs={12} item>
                         <Card title={"Lorem Ipsum"} buttonName={"Learn More"}>
                             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                             sollicitudin, lorem quis bibendum auctor,
                         </Card>
                     </Grid>
-                    <Grid xs={2} item>
+                    <Grid md={2} xs={12} item>
                         <Card title={"Lorem Ipsum"} buttonName={"Learn More"}>
                             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                             sollicitudin, lorem quis bibendum auctor,

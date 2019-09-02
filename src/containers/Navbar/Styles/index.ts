@@ -7,11 +7,11 @@ export const Title = withStyles(
             root: {
                 fontFamily: '"Nautilus", sans-serif',
                 color: 'white',
-                fontSize: '3em'
+                fontSize: '1.5em'
             }
         }
     }
-)(Typography)
+)(Typography);
 
 export const NavItem = withStyles(
     (theme: Theme) => {
@@ -22,6 +22,7 @@ export const NavItem = withStyles(
             root: {
                 padding: '10px 10px',
                 fontFamily: '"Proxima Nova Regular", sans-serif',
+                fontSize: '1em',
                 '&:hover': {
                     fontFamily: '"Proxima Nova Bold", sans-serif',
                 }
